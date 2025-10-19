@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>paul</Author>
+ </Creator>
+ <Manufacturer>Generic</Manufacturer>
+ <Model>9CH Laser </Model>
+ <Type>Laser</Type>
+ <Channel Name="Work Mode" Default="200">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Pattern">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">Circle</Capability>
+  <Capability Min="8" Max="15">Circle 2</Capability>
+  <Capability Min="16" Max="23">Triangle</Capability>
+  <Capability Min="24" Max="31">Square</Capability>
+  <Capability Min="32" Max="38">Square 2</Capability>
+  <Capability Min="39" Max="47">Double Square</Capability>
+  <Capability Min="48" Max="55">Filled Cross</Capability>
+  <Capability Min="56" Max="63">Star</Capability>
+  <Capability Min="64" Max="71">L Shape</Capability>
+  <Capability Min="72" Max="78">Bowtie</Capability>
+  <Capability Min="79" Max="87">Spiral</Capability>
+  <Capability Min="88" Max="95">Curves</Capability>
+  <Capability Min="96" Max="103">Loop</Capability>
+  <Capability Min="104" Max="111">2 lines</Capability>
+  <Capability Min="112" Max="119">Double Wave</Capability>
+  <Capability Min="120" Max="127">Zigzag Waves</Capability>
+  <Capability Min="128" Max="135">V shape</Capability>
+  <Capability Min="136" Max="143">M shape</Capability>
+  <Capability Min="144" Max="151">Step Wave</Capability>
+  <Capability Min="152" Max="159">Line</Capability>
+  <Capability Min="160" Max="167">Dashed Line</Capability>
+  <Capability Min="168" Max="175">Triple Line</Capability>
+  <Capability Min="176" Max="183">Double Offset Lines</Capability>
+  <Capability Min="184" Max="192">Simple Cross</Capability>
+  <Capability Min="193" Max="199">2 Offset Lines</Capability>
+  <Capability Min="200" Max="207">Diamond</Capability>
+  <Capability Min="208" Max="215">2 Squares</Capability>
+  <Capability Min="216" Max="223">4 Squares</Capability>
+  <Capability Min="224" Max="231">1 Square</Capability>
+  <Capability Min="232" Max="239">Dashed Lines</Capability>
+  <Capability Min="240" Max="247">Dashed Half Arc</Capability>
+  <Capability Min="248" Max="255">Small Arcs</Capability>
+ </Channel>
+ <Channel Name="Zoom / Size" Default="40">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="127">Manual Size</Capability>
+  <Capability Min="128" Max="168">Zoom Speed (in)</Capability>
+  <Capability Min="169" Max="209">Zoom Speed (out)</Capability>
+  <Capability Min="210" Max="255">Zoom In / Out</Capability>
+ </Channel>
+ <Channel Name="X Rotation">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0"   Max="32">Manual 0-90°</Capability>
+  <Capability Min="33"  Max="66">Manual 91-180°</Capability>
+  <Capability Min="67"  Max="96">Manual 181-270°</Capability>
+  <Capability Min="97"  Max="127">Manual 271-360°</Capability>
+  <Capability Min="128" Max="191">Speed (CW)</Capability>
+  <Capability Min="192" Max="255">Speed (CCW)</Capability>
+  <Capability Min="128" Max="191">Speed (CW)</Capability>
+  <Capability Min="192" Max="255">Speed (CCW)</Capability>
+ </Channel>
+ <Channel Name="Y Rotation">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0"   Max="32">Manual 0-90°</Capability>
+  <Capability Min="33"  Max="66">Manual 91-180°</Capability>
+  <Capability Min="67"  Max="96">Manual 181-270°</Capability>
+  <Capability Min="97"  Max="127">Manual 271-360°</Capability>
+  <Capability Min="128" Max="191">Speed (CW)</Capability>
+  <Capability Min="192" Max="255">Speed (CCW)</Capability>
+  <Capability Min="128" Max="191">Speed (CW)</Capability>
+  <Capability Min="192" Max="255">Speed (CCW)</Capability>
+ </Channel>
+ <Channel Name="Z Rotation">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0"   Max="32">Manual 0-90°</Capability>
+  <Capability Min="33"  Max="66">Manual 91-180°</Capability>
+  <Capability Min="67"  Max="96">Manual 181-270°</Capability>
+  <Capability Min="97"  Max="127">Manual 271-360°</Capability>
+  <Capability Min="128" Max="191">Speed (CW)</Capability>
+  <Capability Min="192" Max="255">Speed (CCW)</Capability>
+  <Capability Min="128" Max="191">Speed (CW)</Capability>
+  <Capability Min="192" Max="255">Speed (CCW)</Capability>
+ </Channel>
+ <Channel Name="Horizontal Move">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="127">Position</Capability>
+  <Capability Min="128" Max="255">Speed</Capability>
+ </Channel>
+ <Channel Name="Vertical Move">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="127">Position</Capability>
+  <Capability Min="128" Max="255">Speed</Capability>
+ </Channel>
+ <Channel Name="Color" Default="128">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="63">Own</Capability>
+  <Capability Min="64" Max="95">Red</Capability>
+  <Capability Min="96" Max="127">Green</Capability>
+  <Capability Min="128" Max="159">Blue</Capability>
+  <Capability Min="160" Max="191">Yellow</Capability>
+  <Capability Min="192" Max="223">Pink</Capability>
+  <Capability Min="224" Max="255">Cyan</Capability>
+ </Channel>
+ <Mode Name="9CH Mode">
+  <Channel Number="0">Work Mode</Channel>
+  <Channel Number="1">Pattern</Channel>
+  <Channel Number="2">Zoom / Size</Channel>
+  <Channel Number="3">X Rotation</Channel>
+  <Channel Number="4">Y Rotation</Channel>
+  <Channel Number="5">Z Rotation</Channel>
+  <Channel Number="6">Horizontal Move</Channel>
+  <Channel Number="7">Vertical Move</Channel>
+  <Channel Number="8">Color</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
