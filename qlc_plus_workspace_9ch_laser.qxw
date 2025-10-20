@@ -10,9 +10,7 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: BG00S0RX)" Line="0">
-     <PluginParameters UniverseChannels="9"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -803,7 +801,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="590" Y="495" Width="345" Height="280"/>
+    <WindowState Visible="True" X="590" Y="520" Width="345" Height="280"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -837,15 +835,15 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="585" Y="0" Width="350" Height="495"/>
+    <WindowState Visible="True" X="585" Y="0" Width="345" Height="525"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Slider Caption="X (horiz)" ID="20" WidgetStyle="Knob" InvertedAppearance="false">
-     <WindowState Visible="True" X="5" Y="40" Width="110" Height="170"/>
+    <Slider Caption="X (horiz)" ID="20" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="5" Y="40" Width="110" Height="215"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -862,8 +860,8 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="Y (vert)" ID="21" WidgetStyle="Knob" InvertedAppearance="false">
-     <WindowState Visible="True" X="115" Y="40" Width="110" Height="170"/>
+    <Slider Caption="Y (vert)" ID="21" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="115" Y="40" Width="110" Height="215"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -880,8 +878,8 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="Z (depth)" ID="22" WidgetStyle="Knob" InvertedAppearance="false">
-     <WindowState Visible="True" X="225" Y="40" Width="110" Height="170"/>
+    <Slider Caption="Z (depth)" ID="22" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="225" Y="40" Width="110" Height="215"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -906,7 +904,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="5" Y="210" Width="340" Height="235"/>
+     <WindowState Visible="True" X="5" Y="255" Width="340" Height="235"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -976,7 +974,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="5" Y="445" Width="330" Height="50"/>
+     <WindowState Visible="True" X="10" Y="470" Width="330" Height="50"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -984,7 +982,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="X static" ID="15" Icon="">
-      <WindowState Visible="True" X="5" Y="0" Width="95" Height="50"/>
+      <WindowState Visible="True" X="5" Y="10" Width="90" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -997,7 +995,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Y static" ID="17" Icon="">
-      <WindowState Visible="True" X="115" Y="0" Width="95" Height="50"/>
+      <WindowState Visible="True" X="120" Y="10" Width="85" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1010,7 +1008,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Z static" ID="18" Icon="">
-      <WindowState Visible="True" X="225" Y="0" Width="95" Height="50"/>
+      <WindowState Visible="True" X="230" Y="10" Width="90" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
