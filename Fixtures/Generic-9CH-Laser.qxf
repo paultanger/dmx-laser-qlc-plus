@@ -56,46 +56,48 @@
  </Channel>
  <Channel Name="X Rotation">
   <Group Byte="0">Pan</Group>
-  <Capability Min="0"   Max="32">Manual 0-90°</Capability>
-  <Capability Min="33"  Max="66">Manual 91-180°</Capability>
-  <Capability Min="67"  Max="96">Manual 181-270°</Capability>
-  <Capability Min="97"  Max="127">Manual 271-360°</Capability>
-  <Capability Min="128" Max="191">Speed (CW)</Capability>
-  <Capability Min="192" Max="255">Speed (CCW)</Capability>
+  <Capability Min="0" Max="32">Manual 0-90°</Capability>
+  <Capability Min="33" Max="66">Manual 91-180°</Capability>
+  <Capability Min="67" Max="96">Manual 181-270°</Capability>
+  <Capability Min="97" Max="127">Manual 271-360°</Capability>
   <Capability Min="128" Max="191">Speed (CW)</Capability>
   <Capability Min="192" Max="255">Speed (CCW)</Capability>
  </Channel>
  <Channel Name="Y Rotation">
   <Group Byte="0">Tilt</Group>
-  <Capability Min="0"   Max="32">Manual 0-90°</Capability>
-  <Capability Min="33"  Max="66">Manual 91-180°</Capability>
-  <Capability Min="67"  Max="96">Manual 181-270°</Capability>
-  <Capability Min="97"  Max="127">Manual 271-360°</Capability>
-  <Capability Min="128" Max="191">Speed (CW)</Capability>
-  <Capability Min="192" Max="255">Speed (CCW)</Capability>
+  <Capability Min="0" Max="32">Manual 0-90°</Capability>
+  <Capability Min="33" Max="66">Manual 91-180°</Capability>
+  <Capability Min="67" Max="96">Manual 181-270°</Capability>
+  <Capability Min="97" Max="127">Manual 271-360°</Capability>
   <Capability Min="128" Max="191">Speed (CW)</Capability>
   <Capability Min="192" Max="255">Speed (CCW)</Capability>
  </Channel>
  <Channel Name="Z Rotation">
   <Group Byte="0">Effect</Group>
-  <Capability Min="0"   Max="32">Manual 0-90°</Capability>
-  <Capability Min="33"  Max="66">Manual 91-180°</Capability>
-  <Capability Min="67"  Max="96">Manual 181-270°</Capability>
-  <Capability Min="97"  Max="127">Manual 271-360°</Capability>
-  <Capability Min="128" Max="191">Speed (CW)</Capability>
-  <Capability Min="192" Max="255">Speed (CCW)</Capability>
+  <Capability Min="0" Max="32">Manual 0-90°</Capability>
+  <Capability Min="33" Max="66">Manual 91-180°</Capability>
+  <Capability Min="67" Max="96">Manual 181-270°</Capability>
+  <Capability Min="97" Max="127">Manual 271-360°</Capability>
   <Capability Min="128" Max="191">Speed (CW)</Capability>
   <Capability Min="192" Max="255">Speed (CCW)</Capability>
  </Channel>
- <Channel Name="Horizontal Move">
+ <Channel Name="Horizontal Move" Default="64">
   <Group Byte="0">Pan</Group>
-  <Capability Min="0" Max="127">Position</Capability>
-  <Capability Min="128" Max="255">Speed</Capability>
+  <Capability Min="0" Max="35">move right</Capability>
+  <Capability Min="36" Max="64">move left</Capability>
+  <Capability Min="65" Max="96">move right</Capability>
+  <Capability Min="97" Max="127">???</Capability>
+  <Capability Min="128" Max="191">speed move right</Capability>
+  <Capability Min="192" Max="255">speed move left</Capability>
  </Channel>
- <Channel Name="Vertical Move">
+ <Channel Name="Vertical Move" Default="64">
   <Group Byte="0">Tilt</Group>
-  <Capability Min="0" Max="127">Position</Capability>
-  <Capability Min="128" Max="255">Speed</Capability>
+  <Capability Min="0" Max="35">move up</Capability>
+  <Capability Min="36" Max="64">top to middle</Capability>
+  <Capability Min="65" Max="94">middle to bottom</Capability>
+  <Capability Min="97" Max="127">???</Capability>
+  <Capability Min="128" Max="191">speed move up</Capability>
+  <Capability Min="192" Max="255">speed move down</Capability>
  </Channel>
  <Channel Name="Color" Default="128">
   <Group Byte="0">Colour</Group>
